@@ -1,5 +1,5 @@
 FROM nginxinc/nginx-unprivileged:latest
 
-COPY . /usr/share/nginx/html/
+COPY ./Website /usr/share/nginx/html/
 
 WORKDIR /app/
