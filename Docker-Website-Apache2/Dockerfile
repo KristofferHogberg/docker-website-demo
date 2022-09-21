@@ -1,5 +1,5 @@
-FROM httpd:latest
+FROM nginxinc/nginx-unprivileged:latest
 
-WORKDIR /app
+COPY * /usr/share/nginx/html/
 
-COPY ./Website/ /usr/local/apache2/htdocs/
+WORKDIR /app/
